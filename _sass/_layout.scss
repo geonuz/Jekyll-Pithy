@@ -10,15 +10,15 @@ html,body {
     background-color: #515865;
 }
 
-.header-container {
-    max-width: 700px;
+.header-container { /*헤더 부분 넓이*/
+    max-width: 800px;
     margin: 0px auto;
 }
 
 .nav {
 	color: #707070;
 	text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Montserrat",sans-serif;
     display:inline;
@@ -78,7 +78,7 @@ li {
 
 .description {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 22px;
     line-height: 1.5em;
     color: #EEE;
 }
@@ -112,13 +112,13 @@ li {
 }
 
 .post-meta {
-	color: #666;
+	color: #424242;
 	font-size: 12px;
 	margin-left: 0px;
 }
 .content {
 	margin-top: 20px;
-	color: #666;
+	color: #424242; /* 메인화면 포스트 본문 */
 	font-size: 14px;
 }
 
@@ -132,7 +132,7 @@ li {
 }
 
 .post-list li a {
-	color: #000;	
+	color: #000;
 }
 
 #line {
@@ -149,13 +149,15 @@ li {
 }
 
 .well ul {
-	color: #AAA;
+	color: #686868;
 	font-size: 14px;
 	list-style:none;
 }
 
 .well ul a {
-    text-decoration: underline;
+		font-family: NanumBarunGothic;
+		font-size: 20px;
+    text-decoration: none;
 }
 
 .well ul a:hover {
@@ -167,7 +169,7 @@ li {
  */
  .category-box {
 	font-weight:bold;
-	font-size: 16px; 	
+	font-size: 16px;
  }
 
 
@@ -175,7 +177,7 @@ li {
  * About
  */
 .about {
-	color: #666;	
+	color: #666;
 }
 
 /**
@@ -190,8 +192,8 @@ li {
 #gotop {
     position: fixed;
     right: 20px;
-    bottom: 20px;    
-    padding: 10px 15px;    
+    bottom: 20px;
+    padding: 10px 15px;
     font-size: 20px;
     background: #515865;
     color: white;

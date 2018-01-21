@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post h2, .post h3, .post h4, .post h5, .post h6 {
-    font-weight: 600;	
+    font-weight: 600;
 }
 
 /**
@@ -136,7 +136,7 @@ code {
 }
 
 code {
-    padding: 1px 5px;
+  padding: 1px 5px;
 }
 
 pre {
@@ -217,27 +217,24 @@ blockquote {
     padding: 0;
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
+    font-family: "NanumBarunGothic", Helvetica, "Hiragino Sans GB", Arial, sans-serif;  /*본문*/
+    font-size: 14px;
     line-height: 18px;
-    color: #737373;
+    color: #424242;
     background-color: white;
 }
 table {
     margin: 10px 0 15px 0;
     border-collapse: collapse;
 }
-td,th { 
+td,th {
     border: 1px solid #ddd;
     padding: 3px 10px;
 }
 th {
-    padding: 5px 10px;  
+    padding: 5px 10px;
 }
 
-a {
-    color: #0069d6;
-}
 a:hover {
     color: #0050a3;
     text-decoration: none;
@@ -264,8 +261,8 @@ h1 {
 h2 {
     font-size: 24px;
 }
-h3 {
-    font-size: 18px;
+h3 { /* 메인 화면 포스트 제목*/
+    font-size: 20px;
 }
 h4 {
     font-size: 16px;
@@ -302,13 +299,13 @@ blockquote p {
     font-style: italic;
 }
 code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
+    font-family: NanumBarunGothic; /*하이라이트 박스*/
 }
 code {
     background-color: #fee9cc;
     color: rgba(0, 0, 0, 0.75);
     padding: 1px 3px;
-    font-size: 12px;
+    font-size: 14px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -323,10 +320,10 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-pre code {
+pre code { /*코드창*/
     background-color: #fff;
-    color:#737373;
-    font-size: 11px;
+    color:#424242;
+    font-size: 12px;
     padding: 0;
 }
 sup {

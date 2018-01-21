@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "테스트용 포스트입니다."
+date:   2018-01-20 12:44
+categories: test gunwoo
+---
+`깃허브 블로그` 만들기 참 `어렵네요.` 빨리 적응이 되었으면 좋겠다.
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+
+{% highlight python %}
+class simulator:
+  def __init__(self, Pitcher_list, Hitter_list, count):
+    self.player_list = Pitcher_list, Hitter_list
+    self.count = count
+
+  def simul_step(self, Pitcher, Hitter, count):
+    homerun_count= []
+    for i in range(1,count+1):
+      if (Pitcher.action()[0] < Hitter.action()[0]) & (Pitcher.action()[1] < Hitter.action()[1]):
+        homerun_count.append(i)
+    print("{0} 타자는 {1} 투수를 상대로 {2} 회차에서 홈런을 기록하였습니다. 총 홈런 개수는 {3}회입니다.".format(Hitter.name,Pitcher.name,homerun_count,len(homerun_count)))
+    return "타자: {0}, 투수: {1}, 홈런 회차: {2}, 총 홈런 개수: {3}".format(Hitter.name,Pitcher.name,homerun_count,len(homerun_count))
+
+  def simul(self):
+    f = open("Baseball_simul_result.txt", "w", encoding="UTF-8")
+    for p in range (0,len(self.player_list[0])):
+      for b in range (0,len(self.player_list[1])):
+        f.write(self.simul_step(self.player_list[0][p],self.player_list[1][b],self.count)+'\n')
+    f.close()
+
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-help]: https://github.com/jekyll/jekyll-help
